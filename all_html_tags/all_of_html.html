@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <!--this is forms-->
+    <section>
+        <h1>All html tags, just to use everything you remember</h1>
+    <hr>
+    <form action="index2.html">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name" placeholder="enter name" minlength="5" maxlength="10" required><br><br>
+         
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password" placeholder="enter password" required><br><br>
+        
+        <label for="email">Enter your email id</label>
+        <input type="email" id="email" name="email" placeholder="enter email" required><br><br>
+          
+        <label for="num">Enter your lucky number</label>
+        <input type="number" id="num" name="lucky number" placeholder="enter number" min="2" 0 step="2" required><br><br>
+        
+        <label for="col">Enter your favourite color</label>
+        <input type="color" id="col" name="favcolor"><br><br>
+        
+         <label for="dob">Enter your date of birth</label>
+         <input type="date"id="dob" name="birthDate" ><br><br>
+          
+         <label for="range">How much you love programming &quest;</label>
+         <input type="range" id="range" name="loveForPro" step="3"><br><br>
+         
+         <!-- <label for="time">What time you do programming daily &quest;</label>
+         <input type="time" id="time" name="time"><br><br> -->
+
+<!-- checkbox          -->
+         <label for="lang">Check your favourite programming language :)</label><br><br>
+         <label for="lang">Python</label>
+         <input type="checkbox" name="prolang" id="lang" checked>
+
+         <label for="lang">Java</label>
+         <input type="checkbox" name="prolang" id="lang">
+
+         <label for="lang">C++</label>
+         <input type="checkbox" name="prolang" id="lang">
+
+         <label for="lang">JavaScript</label>
+         <input type="checkbox" name="prolang" id="lang">
+         <br><br>
+          
+         <label for="stackover">Do you love stackoverflow &quest; </label>
+         <label for="stackover">yes </label>
+         <input type="radio" name="st" id="stackover" value="yes" checked>
+         <label for="stackover">No </label>
+         <input type="radio" name="stackover" id="stackover" value="no">
+         <br><br>
+         
+         <label for="title">Select a jobtitle</label>
+         <select name="jobtitle" id="title">
+             <option value="null">--Please select a option</option>
+             <option value="software-engineer" selected>Professional Foodie</option>
+             <option value="software-developer">Professional Traveler</option>
+             <option value="android-developer">Full time netflix viewer</option>
+             <option value="web-developer">Professional Gamer</option>
+         </select>
+         <br><br>
+           
+         <label for="mess">Enter a message:</label>
+         <textarea name="message" id="mess" cols="20" rows="5" placeholder="How much you are not excited to work with us?"></textarea>
+         <br><br>
+
+         <label for="url">Enter the url of your website if any: </label>
+         <input type="url" name="weblink" id="url" placeholder="enter url">
+         <br><br>
+         <button>submit form now</button> <br><br>
+         <!-- <img src="naturewall.jpg" alt="this is the nature wallpaper"> -->
+    </form> 
+</section>
+<hr>
+<!--this is tables-->
+<h2>Tables</h2>
+<section>
+    <table>
+        <thead>
+            <!-- 2 rows in thead -->
+            <tr>    <!--1-->
+                <th rowspan="2">products</th>
+                <!-- occupy 2 rows -->
+                <th colspan="3">months</th>
+                <!-- occupy 3 columns -->
+            </tr>
+            <tr>   <!--2-->
+                <th>jan</th>
+                <th>feb</th>
+                <th>march</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>product1</td>
+                <td>200</td>
+                <td>400</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>product2</td>
+                <td>500</td>
+                <td>600</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>product3</td>
+                <td>900</td>
+                <td>500</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total</th>
+                <th colspan="3">1000</th>
+            </tr>
+        </tfoot>
+    </table>
+</section> 
+<hr>
+
+<h2>Sub and Sup</h2>
+<!--this is super and subscript-->
+<footer>
+  <p>I like to dink H <sub>2</sub> O</p>
+  <p>my birthday is on 30 <sup>th</sup> of feburary</p>
+</footer> 
+<hr>
+
+<!--this is lists-->
+<h2>Lists Ol, ul</h2>
+<footer>
+    <p>A radom persons favourite food lists</p>
+    <ol>
+        <li>Noodles</li>
+        <li>Chinese</li>
+        <li>Pizza</li>
+        <ul>
+            <li>NY-style</li>
+            <li>Roman</li>
+        </ul>
+    </ol>
+    <ul>
+        <li>Apple</li>
+        <li>Cranberry</li>
+        <li>Beet</li>
+    </ul>
+</footer>
+<hr>
+
+<h2>Link in a Para</h2>
+<p>Lorem, <span> ipsum dolor sit amet </span>consectetur adipisicing elit. Deleniti, ducimus voluptas aliquid debitis minus hic ex <div> <a href="http://www.google.com">Google</a> accusamus architecto</div> quibusdam modi velit veritatis eum iste ipsa distinctio ipsum quam autem cumque.</p>
+
+<hr>
+<h2>Search Anything</h2>
+<!-- the name att becomes important here -->
+<form action="https://www.google.com/search" target="new" >
+    <label for="query">Enter what you want to search at google:</label>
+    <input type="text" name="q" id="query" placeholder="google">
+    <button>submit</button>
+</form>
+<br><br>
+
+<form action="https://www.youtube.com/results/" target="new">
+    <label for="que">Enter what you want to search at youtube:</label>
+    <input type="text" name="search_query" id="que" placeholder="youtube">
+    <button>submit</button>
+</form>
+<br><br>
+
+<form action="https://www.redit.com/search" target="new" >
+    <label for="q">Enter what you want to search at Redit:</label>
+    <input type="text" name="q" id="q" placeholder="redit" >
+    <button>submit</button>
+</form>
+<br><br>
+
+</body>
+</html>
+
+
+<!--
+ label tag- used for usability improvements for mouse users, eg:click on"enter your name" and the cursor will show up in the text box. 
+ This binding is created using the "for" in the "label" and "id" in the "input". The two should be same.
+name - type - id - value - for - placeholder - autofocus - autocomplete - required - target - action
+
+-->
